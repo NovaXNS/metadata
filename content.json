@@ -31,7 +31,7 @@
             "type ": "bool"
         },
         {
-            "args": "UserAllowList",
+            "args": "UserAllowListEnable",
             "name": "自定义放行",
             "description": "用户自定义例外放行功能，总开关",
             "type ": "bool"
