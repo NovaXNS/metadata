@@ -1,0 +1,52 @@
+﻿{
+    "links": [
+        {
+            "args": "SkipAlexaTop",
+            "name": "跳过著名网站",
+            "description": "不拦截Alexa Top10000的著名网站",
+            "type ": "bool"
+        },
+        {
+            "args": "AdsBanListEnable",
+            "name": "广告与隐私防护",
+            "description": "广告与隐私防护功能，总开关",
+            "type ": "bool"
+        },
+        {
+            "args": "AppBanListEnable",
+            "name": "应用拦截",
+            "description": "应用拦截功能，总开关",
+            "type ": "bool"
+        },
+        {
+            "args": "AppAllowListEnable",
+            "name": "应用放行",
+            "description": "例外放行特定应用程序，总开关",
+            "type ": "bool"
+        },
+        {
+            "args": "UserBanListEnable",
+            "name": "自定义拦截",
+            "description": "用户自定义拦截功能，总开关",
+            "type ": "bool"
+        },
+        {
+            "args": "UserAllowList",
+            "name": "自定义放行",
+            "description": "用户自定义例外放行功能，总开关",
+            "type ": "bool"
+        },
+        {
+            "args": "UserHostsListEnable",
+            "name": "自定义重写",
+            "description": "用户自定义解析功能(HOSTS)，总开关",
+            "type ": "bool"
+        },
+        {
+            "args": "TldBanListEnable",
+            "name": "顶级域拦截",
+            "description": "指定顶级域拦截功能(TLD)，总开关",
+            "type ": "bool"
+        }
+    ]
+}
