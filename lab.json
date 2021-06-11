@@ -1,0 +1,21 @@
+{
+	"alternate": [{
+		"args": "HDnsName",
+		"name": "Handshake",
+		"img": "https://pic.stackoverflow.wiki/uploadImages/220/200/39/113/2021/06/11/23/45/b2b3a8b4-56d0-4451-8df0-431a60d5f3fc.svg",
+		"description": "Handshake 是一个实验性的基于区块链的分布式的替代根系统与协议，它让人人都可以注册并拥有自己的顶级域名（TLD）。",
+		"type ": "bool"
+	}, {
+		"args": "OpenNicName",
+		"name": "OpenNIC",
+		"img": "https://pic.stackoverflow.wiki/uploadImages/220/200/39/113/2021/06/11/23/45/b2b3a8b4-56d0-4451-8df0-431a60d5f3fc.svg",
+		"description": "OpenNIC 是一个开放自由的替代 DNS 根，它完全由社区和志愿者运作。",
+		"type ": "bool"
+	}, {
+		"args": "EthNsName",
+		"name": "Ethereum Name Service",
+		"img": "https://app.ens.domains/static/media/ensIconLogo.19559e18.svg",
+		"description": "ENS 是运行在以太坊上的域名系统，由以太坊基金会发起，现由新加坡非营利性组织 True Names LTD 管理。",
+		"type ": "bool"
+	}
+}
