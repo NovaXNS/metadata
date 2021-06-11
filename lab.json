@@ -17,5 +17,5 @@
 		"img": "https://app.ens.domains/static/media/ensIconLogo.19559e18.svg",
 		"description": "ENS 是运行在以太坊上的域名系统，由以太坊基金会发起，现由新加坡非营利性组织 True Names LTD 管理。",
 		"type ": "bool"
-	}
+	}]
 }
