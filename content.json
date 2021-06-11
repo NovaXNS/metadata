@@ -1,52 +1,80 @@
-﻿{
-    "links": [
-        {
-            "args": "SkipAlexaTop",
-            "name": "跳过著名网站",
-            "description": "不拦截Alexa Top10000的著名网站",
-            "type ": "bool"
-        },
-        {
-            "args": "AdsBanListEnable",
-            "name": "广告与隐私防护",
-            "description": "广告与隐私防护功能，总开关",
-            "type ": "bool"
-        },
-        {
-            "args": "AppBanListEnable",
-            "name": "应用拦截",
-            "description": "应用拦截功能，总开关",
-            "type ": "bool"
-        },
-        {
-            "args": "AppAllowListEnable",
-            "name": "应用放行",
-            "description": "例外放行特定应用程序，总开关",
-            "type ": "bool"
-        },
-        {
-            "args": "UserBanListEnable",
-            "name": "自定义拦截",
-            "description": "用户自定义拦截功能，总开关",
-            "type ": "bool"
-        },
-        {
-            "args": "UserAllowListEnable",
-            "name": "自定义放行",
-            "description": "用户自定义例外放行功能，总开关",
-            "type ": "bool"
-        },
-        {
-            "args": "UserHostsListEnable",
-            "name": "自定义重写",
-            "description": "用户自定义解析功能(HOSTS)，总开关",
-            "type ": "bool"
-        },
-        {
-            "args": "TldBanListEnable",
-            "name": "顶级域拦截",
-            "description": "指定顶级域拦截功能(TLD)，总开关",
-            "type ": "bool"
-        }
-    ]
+{
+	"total": [{
+		"args": "AdsBanListEnable",
+		"name": "ADs 广告与隐私防护",
+		"description": "广告与隐私防护功能，总开关",
+		"type ": "bool"
+	}, {
+		"args": "AppBanListEnable",
+		"name": "APPs 应用拦截",
+		"description": "应用拦截功能，总开关",
+		"type ": "bool"
+	}, {
+		"args": "AppAllowListEnable",
+		"name": "APPs 应用放行",
+		"description": "例外放行特定应用程序，总开关",
+		"type ": "bool"
+	}, {
+		"args": "UserBanListEnable",
+		"name": "自定义拦截",
+		"description": "用户自定义拦截功能，总开关",
+		"type ": "bool"
+	}, {
+		"args": "UserAllowListEnable",
+		"name": "自定义放行",
+		"description": "用户自定义例外放行功能，总开关",
+		"type ": "bool"
+	}, {
+		"args": "UserHostsListEnable",
+		"name": "自定义重写",
+		"description": "用户自定义解析功能(HOSTS)，总开关",
+		"type ": "bool"
+	}, {
+		"args": "TldBanListEnable",
+		"name": "TLDs 顶级域拦截",
+		"description": "指定顶级域拦截功能(TLDs)，总开关",
+		"type ": "bool"
+	}],
+	"speed": [{
+		"args": "SkipAlexaTop",
+		"name": "Alexa 著名网站加速",
+		"description": "跳过 Alexa Top 10K 的著名网站，不进行分析，以加快解析速度",
+		"type ": "bool"
+	}, {
+		"args": "CBoost",
+		"name": "Cache Boost 缓存加速",
+		"description": "通过强制执行 TTL（缓存存活时间）最佳实践，减少无意义查询",
+		"type ": "bool"
+	}, {
+		"args": "ActiveEcs",
+		"name": "主动 EDNS Client Subnet (ECS)",
+		"description": "为您的 DNS 查询主动添加额外的 ECS 信息，以优化 GeoDNS 识别",
+		"type ": "bool"
+	}, {
+		"args": "OnlyAProtect",
+		"name": "CNAME 拉平",
+		"description": "减少对中间域名进行别名查询，并防止可能的 CNAME 追踪器的跟踪。",
+		"type ": "bool"
+	}],
+	"safe": [{
+		"args": "GoogleSafe",
+		"name": "Google 安全浏览",
+		"description": "使用 Google 安全浏览，拦截不安全的网站，阻止恶意软件和网络钓鱼等风险。（基于与 Google 同步的本地数据库，您的 IP 与查询域名不会被发往 Google 服务器）",
+		"type ": "bool"
+	}, {
+		"args": "TencentSafe",
+		"name": "腾讯网址安全",
+		"description": "使用腾讯网址安全服务，拦截不安全的网站，阻止恶意软件和网络钓鱼等风险。（您的查询域名被匿名的发往 Tencent 服务器，仅发送域名不包含您的信息）",
+		"type ": "bool"
+	}, {
+		"args": "LocalRebindProtect",
+		"name": "DNS 重绑定保护",
+		"description": "拦截包含局域网 IP 地址的查询结果，预防局域网钓鱼和远程命令控制攻击(C2)。",
+		"type ": "bool"
+	}, {
+		"args": "OnlyAProtect",
+		"name": "OnlyA 强化响应加固",
+		"description": "仅返回 A 记录响应，并执行 CNAME 拉平，以预防远程命令控制攻击(C2)。（这可能使得部分应用无法工作，仅建议在高风险环境下使用）",
+		"type ": "bool"
+	}]
 }
