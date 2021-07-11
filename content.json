@@ -35,6 +35,22 @@
 		"description": "指定顶级域拦截功能(TLDs)，总开关",
 		"type ": "bool"
 	}],
+	"userlist": [{
+		"args": "UserBanListEnable",
+		"name": "自定义拦截",
+		"description": "用户自定义拦截功能，总开关",
+		"type ": "bool"
+	}, {
+		"args": "UserAllowListEnable",
+		"name": "自定义放行",
+		"description": "用户自定义例外放行功能，总开关",
+		"type ": "bool"
+	}, {
+		"args": "UserHostsListEnable",
+		"name": "自定义重写",
+		"description": "用户自定义解析功能(HOSTS)，总开关",
+		"type ": "bool"
+	}],
 	"speed": [{
 		"args": "SkipAlexaTop",
 		"name": "Alexa 著名网站加速",
