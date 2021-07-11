@@ -51,6 +51,12 @@
 		"description": "用户自定义解析功能(HOSTS)，总开关",
 		"type ": "bool"
 	}],
+	"sublist": [{
+		"args": "AdsBanListEnable",
+		"name": "ADs 广告与隐私防护",
+		"description": "广告与隐私防护功能，总开关",
+		"type ": "bool"
+	}],
 	"speed": [{
 		"args": "SkipAlexaTop",
 		"name": "Alexa 著名网站加速",
